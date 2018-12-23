@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link href="./home.css" type="text/css" rel="stylesheet" media="all"> 
+		<script type="text/javascript" src="./lib/gl-matrix.js"></script>
+		<script type="text/javascript" src="./lib/webgl-debug.js"></script>
+		<script type="text/javascript" src="./lib/webgl-utils.js*"></script>
+		<script src="https://webglfundamentals.org/webgl/resources/webgl-lessons-ui.js"></script>
+		<script src="https://webglfundamentals.org/webgl/resources/m3.js"></script>
+		<script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>		
+		<script id="2d-vertex-shader" type="x-shader/x-vertex">
+			attribute vec2 a_position;
+			uniform mat3 u_matrix;
+			varying vec4 v_color;
+			void main() {
+				gl_Position = vec4((u_matrix * vec3(a_position, 1)).xy, 0, 1);
+
+				v_color = gl_Position * 0.2 + 0.5;
+			}
+		</script>
+		<!-- fragment shader -->
+		<script id="2d-fragment-shader" type="x-shader/x-fragment">
+			precision mediump float;
+			varying vec4 v_color;
+
+			void main() {
+				gl_FragColor = v_color;
+			}
+		</script>
+		<script type="text/javascript" src="source.js"></script>
+	</head>
+	<body onload="main()">
+		<canvas id="webgl"></canvas>
+		<div id="uiContainer">
+			<div id="ui">
+				<div id="vert1"></div>
+				<div id="vert2"></div>
+				<div id="vert3"></div>
+				<div id="vert4"></div>
+				<div id="vert5"></div>
+				<div id="vert6"></div>
+			</div>
+		</div>
+	</body>
+</html>
