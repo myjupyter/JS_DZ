@@ -187,4 +187,63 @@ body.iframe {
   }
 }
 
+#vert6_ {
+    position: absolute;
+    left: 600px;
+    top: 480px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+
+}
+#vert5_ {
+    position: absolute;
+    left: 600px;
+    top: 160px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+
+}
+#vert4_ {
+    position: absolute;
+    left: 315px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+
+}
+#vert3_ {
+    position: absolute;
+    left: 40px;
+    top: 160px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+
+}
+#vert2_ {
+    position: absolute;
+    left: 40px;
+    top: 480px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+
+}
+#vert1_ {
+    position: absolute;
+    left: 315px;
+    top: 625px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+}
 
